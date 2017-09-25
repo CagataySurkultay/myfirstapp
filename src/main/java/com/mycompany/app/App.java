@@ -1,17 +1,17 @@
 package com.mycompany.app;
-import java.util.ArrayList;
+
 /**
  * Hello world!
  *
  */
 public class App 
 {
-        public static boolean search(ArrayList<Integer> array, int e) {
+        public static boolean search(ArrayList<String> array, int e, String k) {
         System.out.println("inside search");
         if (array == null) return false;
-  
-        for (int elt : array) {
-          if (elt == e) return true;
+        
+        for (String elt : array) {
+          if (elt.length == k || elt == e) return true;
         }
         return false;
       }
